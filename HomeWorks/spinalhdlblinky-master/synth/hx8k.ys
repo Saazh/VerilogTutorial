@@ -1,0 +1,6 @@
+read_verilog Blinky.v
+hierarchy -top Blinky
+fsm_info
+synth_ice40
+write_blif hx8k/hx8k_blinky.blif
+write_json hx8k/hx8k_blinky.json

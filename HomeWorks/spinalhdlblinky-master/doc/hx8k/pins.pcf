@@ -1,0 +1,131 @@
+#12mhz onboard clk
+#set_io --warn-no-port clk J3
+#external clock pin, driven by stimulus generator
+#set_io --warn-no-port clk L3
+
+
+
+#set_io --warn-no-port reset B1 
+#### J2 ####
+#set_io --warn-no-port SIGNAL P16 #
+#set_io --warn-no-port SIGNAL N16 #
+#set_io --warn-no-port SIGNAL M16 #
+#set_io --warn-no-port SIGNAL K15 #
+#set_io --warn-no-port SIGNAL K14 #
+#set_io --warn-no-port SIGNAL G14 #
+#set_io --warn-no-port SIGNAL J15 #
+#set_io --warn-no-port SIGNAL H16 #
+#set_io --warn-no-port SIGNAL G16 #
+#set_io --warn-no-port SIGNAL F16 #
+#set_io --warn-no-port SIGNAL E16 #
+#set_io --warn-no-port SIGNAL D16 #
+#set_io --warn-no-port SIGNAL C16 #
+
+#set_io --warn-no-port SIGNAL R15 #
+#set_io --warn-no-port SIGNAL P15 #
+#set_io --warn-no-port SIGNAL M15 #
+#set_io --warn-no-port SIGNAL L16 #
+#set_io --warn-no-port SIGNAL K16 #
+#set_io --warn-no-port SIGNAL J14 #
+#set_io --warn-no-port SIGNAL F14 #
+#set_io --warn-no-port SIGNAL H14 #
+#set_io --warn-no-port SIGNAL G15 #
+#set_io --warn-no-port SIGNAL F15 #
+#set_io --warn-no-port SIGNAL E14 #
+#set_io --warn-no-port SIGNAL D15 #
+#set_io --warn-no-port SIGNAL D14 #
+#set_io --warn-no-port SIGNAL B16 #
+
+#### J1 ####
+#set_io --warn-no-port SIGNAL A16 #
+#set_io --warn-no-port SIGNAL A15 #
+#set_io --warn-no-port SIGNAL B13 #
+#set_io --warn-no-port SIGNAL B12 #
+#set_io --warn-no-port SIGNAL A11 #
+#set_io --warn-no-port SIGNAL A10 #
+#set_io --warn-no-port SIGNAL A9 #
+#set_io --warn-no-port SIGNAL B8 #
+#set_io --warn-no-port SIGNAL B7 #
+#set_io --warn-no-port SIGNAL A6 #
+#set_io --warn-no-port SIGNAL B6 #
+#set_io --warn-no-port SIGNAL A5 #
+#set_io --warn-no-port SIGNAL B5 #
+#set_io --warn-no-port SIGNAL B4 #
+#set_io --warn-no-port SIGNAL A2 #
+
+#set_io --warn-no-port SIGNAL B15 #
+#set_io --warn-no-port SIGNAL B14 #
+#set_io --warn-no-port SIGNAL B11 #
+#set_io --warn-no-port SIGNAL B10 #
+#set_io --warn-no-port SIGNAL C9 #
+#set_io --warn-no-port SIGNAL B9 #
+#set_io --warn-no-port SIGNAL A7 #
+#set_io --warn-no-port SIGNAL C7 #
+#set_io --warn-no-port SIGNAL C6 #
+#set_io --warn-no-port SIGNAL C5 #
+#set_io --warn-no-port SIGNAL C4 #
+#set_io --warn-no-port SIGNAL C3 #
+#set_io --warn-no-port SIGNAL B3 #
+#set_io --warn-no-port SIGNAL A1 #
+
+#### J3 ####
+#set_io --warn-no-port SIGNAL R16 #
+#set_io --warn-no-port SIGNAL T15 #
+#set_io --warn-no-port SIGNAL T13 #
+#set_io --warn-no-port SIGNAL N12 #
+#set_io --warn-no-port SIGNAL N10 #
+#set_io --warn-no-port SIGNAL T11 #
+#set_io --warn-no-port SIGNAL T10 #
+#set_io --warn-no-port SIGNAL P8 #
+#set_io --warn-no-port SIGNAL T9 #
+#set_io --warn-no-port SIGNAL T7 #
+#set_io --warn-no-port SIGNAL T6 #
+#set_io --warn-no-port SIGNAL T5 #
+#set_io --warn-no-port SIGNAL R3 #
+#set_io --warn-no-port SIGNAL R2 #
+#set_io --warn-no-port SIGNAL T1 #
+
+#set_io --warn-no-port SIGNAL T16 #
+#set_io --warn-no-port SIGNAL T14 #
+#set_io --warn-no-port SIGNAL P13 #
+#set_io --warn-no-port SIGNAL M11 #
+#set_io --warn-no-port SIGNAL P10 #
+#set_io --warn-no-port SIGNAL R10 #
+#set_io --warn-no-port SIGNAL P9 #
+#set_io --warn-no-port SIGNAL R9 #
+#set_io --warn-no-port SIGNAL T8 #
+#set_io --warn-no-port SIGNAL R6 #
+#set_io --warn-no-port SIGNAL R5 #
+#set_io --warn-no-port SIGNAL R4 #
+#set_io --warn-no-port SIGNAL T3 #
+#set_io --warn-no-port SIGNAL T2 #
+
+#### J4 ####
+#set_io --warn-no-port SIGNAL P1 #
+#set_io --warn-no-port SIGNAL N3 #
+#set_io --warn-no-port SIGNAL M2 #
+#set_io --warn-no-port SIGNAL L3 #
+#set_io --warn-no-port SIGNAL K3 #
+#set_io --warn-no-port SIGNAL J2 #
+#set_io --warn-no-port SIGNAL H2 #
+#set_io --warn-no-port SIGNAL G2 #
+#set_io --warn-no-port SIGNAL F2 #
+#set_io --warn-no-port SIGNAL E2 #
+#set_io --warn-no-port SIGNAL D1 #
+#set_io --warn-no-port SIGNAL C1 #
+#set_io --warn-no-port SIGNAL B1 #
+
+set_io --warn-no-port reset R1 #-pullup yes#
+#set_io --warn-no-port SIGNAL P2 #
+#set_io --warn-no-port SIGNAL N2 #
+#set_io --warn-no-port SIGNAL M1 #
+#set_io --warn-no-port SIGNAL L1 #
+#set_io --warn-no-port SIGNAL K1 #
+#set_io --warn-no-port SIGNAL J1 #
+set_io --warn-no-port clk J3 # 12 MHz onboard clock on HX8K Development Board
+#set_io --warn-no-port SIGNAL H1 #
+#set_io --warn-no-port SIGNAL G1 #
+#set_io --warn-no-port SIGNAL F1 #
+#set_io --warn-no-port SIGNAL D2 #
+#set_io --warn-no-port SIGNAL C2 #
+#set_io --warn-no-port SIGNAL B2 #
