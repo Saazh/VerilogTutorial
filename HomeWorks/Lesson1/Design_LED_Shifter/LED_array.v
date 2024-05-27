@@ -9,7 +9,7 @@
 module LED_array (
     input clk,
     input rst,
-    input rst_shifter,
+//    input rst_shifter,
     output reg [7:0] out
 );
 
@@ -19,7 +19,8 @@ module LED_array (
     reg flag_cntr; //controls the direction of the shifting
     
     always @(posedge clk) begin
-        if (!rst_shifter) begin
+//        if (!rst_shifter) begin
+        if (!rst) begin
             cntr <= 0;
             out <= 8'b10000000;
             flag_cntr <= 0; 
@@ -102,14 +103,14 @@ endmodule
 module LED_array_tb();
 
     wire clock_tb;
-    reg rst_shifter_tb;
+//    reg rst_shifter_tb;
     reg rst_tb;
     wire [7:0] out_tb;
 
     LED_array dut (
         .clk(clock_tb),
         .rst(rst_tb),
-        .rst_shifter(rst_shifter_tb),
+//        .rst_shifter(rst_shifter_tb),
         .out(out_tb)
     );
 
@@ -144,19 +145,19 @@ module LED_array_tb();
         `WAIT_CYCLES(16);
         $display("Testing Resets...");
         rst_tb = 1;
-        rst_shifter_tb = 0;
+//        rst_shifter_tb = 0;
         //#12;
-        `WAIT_CYCLES(24);
-        rst_shifter_tb = 1;
+//        `WAIT_CYCLES(24);
+//        rst_shifter_tb = 1;
         // #5         // Set rst to 1
-        `WAIT_CYCLES(10);
-        rst_shifter_tb = 0;
+//        `WAIT_CYCLES(10);
+//        rst_shifter_tb = 0;
         // #5
-        `WAIT_CYCLES(10);
-        rst_shifter_tb = 1;
+//        `WAIT_CYCLES(10);
+//        rst_shifter_tb = 1;
         $display("Testing resets done, testing functionality...");
         // #20000000; // Wait for simulation to complete
-        `WAIT_CYCLES(500000000);
+        `WAIT_CYCLES(500000);
         $finish;
     end
 
